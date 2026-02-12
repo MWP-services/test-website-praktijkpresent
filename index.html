@@ -1,13 +1,144 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test-website-praktijkpresent</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Van Dijk Web & AI Solutions - Websites en AI-automatisering voor het mkb." />
+  <title>Van Dijk Web & AI Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <div class="container nav-container">
+      <a href="#home" class="brand">Van Dijk Web & AI Solutions</a>
+      <nav aria-label="Hoofdnavigatie">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#diensten">Diensten</a></li>
+          <li><a href="#over-mij">Over mij</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-image-wrap">
+          <img src="assets/foto.jpg" alt="Portret of logo van Van Dijk Web & AI Solutions" class="hero-image" />
+        </div>
+        <div class="hero-content">
+          <h1 id="hero-title">Van Dijk Web & AI Solutions</h1>
+          <p class="subtitle">Websites &amp; AI-automatisering voor het mkb</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Vraag een offerte aan</a>
+            <a href="#diensten" class="btn btn-secondary">Bekijk diensten</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="diensten" aria-labelledby="diensten-title">
+      <div class="container">
+        <h2 id="diensten-title">Diensten</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Website op maat</h3>
+            <p>Snelle, gebruiksvriendelijke websites die passen bij jouw bedrijf en doelen.</p>
+          </article>
+          <article class="card">
+            <h3>Automatisering (AI &amp; workflows)</h3>
+            <p>Slimme automatiseringen die repetitieve taken verminderen en processen versnellen.</p>
+          </article>
+          <article class="card">
+            <h3>Onderhoud &amp; support</h3>
+            <p>Doorlopende updates, monitoring en praktische hulp zodat jouw website betrouwbaar blijft.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="over-mij" aria-labelledby="overmij-title">
+      <div class="container">
+        <h2 id="overmij-title">Over mij</h2>
+        <p>
+          “Ik help mkb-bedrijven met snelle websites en slimme automatiseringen, zodat je minder tijd kwijt bent aan handwerk en meer tijd hebt voor klanten.”
+        </p>
+        <ul class="benefits-list">
+          <li>Snel schakelen en korte lijnen</li>
+          <li>Transparante communicatie en duidelijke afspraken</li>
+          <li>Resultaatgericht met focus op praktische winst</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <h2 id="contact-title">Contact</h2>
+          <p>Neem direct contact op:</p>
+          <p><strong>E-mail:</strong> <a href="mailto:jasper@vandijkwebai.nl">jasper@vandijkwebai.nl</a></p>
+          <p><strong>Telefoon:</strong> <a href="tel:+31612345678">+31 6 1234 5678</a></p>
+          <p><strong>Bedrijfsnaam:</strong> Van Dijk Web &amp; AI Solutions</p>
+          <p><strong>Eigenaar:</strong> Jasper van Dijk</p>
+          <p><strong>Rechtsvorm:</strong> Eenmanszaak (zzp)</p>
+          <p><strong>Branche:</strong> Webdevelopment &amp; AI-automatisering voor mkb</p>
+          <p><strong>Vestigingsadres:</strong><br />Korenmolenweg 12<br />2805 BB Gouda<br />Nederland</p>
+          <p><strong>KvK-nummer:</strong> 83927461</p>
+          <p><strong>Btw-id:</strong> NL004512345B01</p>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <h3>Stuur een bericht</h3>
+          <label for="naam">Naam</label>
+          <input type="text" id="naam" name="naam" required />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="bericht">Bericht</label>
+          <textarea id="bericht" name="bericht" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Verstuur</button>
+          <p class="mock-note">Dit is een mock, er wordt niets verstuurd.</p>
+          <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="privacy" aria-labelledby="privacy-title">
+      <div class="container">
+        <h2 id="privacy-title">Privacy</h2>
+        <p>
+          “Van Dijk Web &amp; AI Solutions verwerkt je gegevens alleen om contact met je op te nemen of een offerte te maken. We delen je gegevens niet met derden en bewaren ze niet langer dan nodig. Voor vragen kun je mailen naar jasper@vandijkwebai.nl.”
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Van Dijk Web &amp; AI Solutions</h2>
+        <p>Eenmanszaak (zzp)</p>
+        <p>&copy; <span id="year"></span> Van Dijk Web &amp; AI Solutions</p>
+      </div>
+      <div>
+        <p><strong>Vestigingsadres</strong></p>
+        <p>Korenmolenweg 12<br />2805 BB Gouda<br />Nederland</p>
+      </div>
+      <div>
+        <p><strong>Contact</strong></p>
+        <p><a href="mailto:jasper@vandijkwebai.nl">jasper@vandijkwebai.nl</a></p>
+        <p><a href="tel:+31612345678">+31 6 1234 5678</a></p>
+        <p>KvK-nummer: 83927461</p>
+        <p>Btw-id: NL004512345B01</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
